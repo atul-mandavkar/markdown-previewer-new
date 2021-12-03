@@ -3,5 +3,11 @@
   height: 40%;
   margin: auto;
   margin-top: 2%;
-  background-color: turquoise;
+  background-color: white;
+  border: 1px solid;
+}
+@media screen and (max-width:600px) {
+  .editContainer{
+    width: 85%;
+  }
 }
