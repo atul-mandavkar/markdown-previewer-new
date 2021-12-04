@@ -1,0 +1,12 @@
+.minimize1{
+  display: none;
+}
+.minimize1:hover{
+  color: whitesmoke;
+}
+.maximize1{
+  display: inline;
+}
+.maximize1:hover{
+  color: whitesmoke;
+}

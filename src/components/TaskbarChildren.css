@@ -1,6 +1,5 @@
 .taskbarChildren{
   width: 100%;
-
 }
 #headingEdittor, #headingPreview{
   display: flex;
@@ -10,7 +9,8 @@
 }
 #iconsContainerEdittor, #iconsContainerPreview{
   display: flex;
+  justify-content: right;
   align-items: center;
-  justify-content: flex-end;
+  margin-left: -5%;
   font-size: 18px;
 }
