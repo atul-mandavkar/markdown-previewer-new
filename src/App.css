@@ -1,0 +1,8 @@
+.textArea{
+  width: 100%;
+  height: calc(100% - 40px);
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}

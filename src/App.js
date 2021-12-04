@@ -4,6 +4,7 @@ import PreviewContainer from "./components/PreviewContainer";
 import BoardTaskbar from "./components/BoardTaskbar";
 import TaskbarChildren from "./components/TakbarChildren";
 import TaskbarIcons from "./components/TaskbarIcons";
+import "./App.css";
 
 const App = () => {
   const maximizeScreen1 = () => {
@@ -55,6 +56,7 @@ const App = () => {
             <TaskbarIcons className="fas fa-expand maximize1" id="max1" onClick={maximizeScreen1}></TaskbarIcons>
           </TaskbarChildren>
         </BoardTaskbar>
+        <textarea className="textArea"></textarea>
       </EdittorContainer>
       <PreviewContainer>
         <BoardTaskbar>
