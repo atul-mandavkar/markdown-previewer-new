@@ -4,9 +4,13 @@ import PreviewContainer from "./components/PreviewContainer";
 import BoardTaskbar from "./components/BoardTaskbar";
 import TaskbarChildren from "./components/TakbarChildren";
 import TaskbarIcons from "./components/TaskbarIcons";
+import DisplayScreen from "./components/DisplayScreen";
 import "./App.css";
 
+let OriginalValue = "<h1>atul</h1>"
+
 const App = () => {
+
   const maximizeScreen1 = () => {
     console.log("maximize1");
     document.getElementsByClassName("maximize1")[0].style.display="none";
@@ -44,6 +48,11 @@ const App = () => {
     document.getElementsByClassName("editContainer")[0].style.display="block";
   }
 
+  const textChange = () => {
+    let x = document.getElementsByClassName("textArea")[0].value;
+    document.getElementsByClassName("displayScreen")[0].innerHTML =x;
+  }
+
   return (
     <Wrapper>
       <EdittorContainer>
@@ -56,7 +65,7 @@ const App = () => {
             <TaskbarIcons className="fas fa-expand maximize1" id="max1" onClick={maximizeScreen1}></TaskbarIcons>
           </TaskbarChildren>
         </BoardTaskbar>
-        <textarea className="textArea"></textarea>
+        <textarea className="textArea" defaultValue={OriginalValue} onChange={textChange}></textarea>
       </EdittorContainer>
       <PreviewContainer>
         <BoardTaskbar>
@@ -68,6 +77,9 @@ const App = () => {
             <TaskbarIcons className="fas fa-expand maximize1" id="max2" onClick={maximizeScreen2}></TaskbarIcons>
           </TaskbarChildren>
         </BoardTaskbar>
+        <DisplayScreen>
+          
+        </DisplayScreen>
       </PreviewContainer>
     </Wrapper>
   );
